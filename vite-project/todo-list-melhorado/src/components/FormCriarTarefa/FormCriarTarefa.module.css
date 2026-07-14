@@ -1,0 +1,60 @@
+.FormCriarTarefa {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+    background: var(--fundo-card);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 1rem;
+    box-shadow: var(--sombra-sm);
+}
+
+.linhaPrincipal {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.linhaOpcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.prioridades {
+    display: flex;
+    gap: 0.35rem;
+}
+
+.prioridade {
+    border: 1.5px solid var(--borda);
+    background: transparent;
+    color: var(--texto-suave);
+    border-radius: 999px;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all var(--transicao);
+}
+
+.prioridade[data-ativo='true'] {
+    border-color: var(--cor-prioridade);
+    color: var(--cor-prioridade);
+    background: color-mix(in srgb, var(--cor-prioridade) 12%, transparent);
+}
+
+.data {
+    border: 1.5px solid var(--borda);
+    background: var(--fundo-card);
+    color: var(--texto);
+    border-radius: var(--raio-sm);
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+}
+
+.data:focus {
+    outline: none;
+    border-color: var(--verde);
+}

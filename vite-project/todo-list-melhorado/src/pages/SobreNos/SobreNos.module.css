@@ -1,0 +1,79 @@
+.SobreNos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.SobreNos h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.SobreNos > p {
+    color: var(--texto-suave);
+    line-height: 1.55;
+    text-align: center;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    gap: 0.75rem;
+}
+
+.card {
+    background: var(--fundo-card);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 1rem;
+    box-shadow: var(--sombra-sm);
+}
+
+.card svg {
+    color: var(--verde);
+    margin-bottom: 0.4rem;
+}
+
+.card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.card p {
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+    line-height: 1.4;
+}
+
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+.badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    background: var(--fundo-hover);
+    border: 1px solid var(--borda);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.link:hover {
+    color: var(--verde-escuro);
+}

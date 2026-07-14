@@ -1,0 +1,47 @@
+.Cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--preto), #1a1a1a);
+    color: var(--cinza);
+    padding: 0.75rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: var(--sombra-sm);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+.logo h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.logo h1 span {
+    color: var(--rosa);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    font-weight: 500;
+    opacity: 0.85;
+    transition: opacity var(--transicao);
+}
+
+.nav a:hover {
+    opacity: 1;
+}

@@ -1,0 +1,39 @@
+.ListaTarefas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.estado,
+.estadoVazio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2.5rem 1rem;
+    color: var(--texto-suave);
+    text-align: center;
+}
+
+.estado {
+    flex-direction: row;
+}
+
+.estadoVazio svg {
+    color: var(--verde);
+    opacity: 0.7;
+}
+
+.estadoVazio p {
+    font-weight: 600;
+    color: var(--texto);
+}
+
+.avisoFiltro {
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+    margin-bottom: 0.6rem;
+    text-align: center;
+}

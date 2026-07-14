@@ -1,0 +1,30 @@
+.NotFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--texto-suave);
+}
+
+.NotFound svg {
+    color: var(--rosa);
+    margin-bottom: 0.5rem;
+}
+
+.NotFound h1 {
+    font-size: 2.5rem;
+    color: var(--texto);
+}
+
+.link {
+    margin-top: 1rem;
+    color: var(--verde-escuro);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

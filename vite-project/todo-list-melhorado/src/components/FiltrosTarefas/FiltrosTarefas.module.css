@@ -1,0 +1,38 @@
+.FiltrosTarefas {
+    display: flex;
+    gap: 0.25rem;
+    background: var(--fundo-card);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio-sm);
+    padding: 0.25rem;
+    box-shadow: var(--sombra-sm);
+}
+
+.opcao {
+    position: relative;
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 0.45rem 0.75rem;
+    border-radius: calc(var(--raio-sm) - 4px);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+.opcao[aria-selected='true'] {
+    color: white;
+}
+
+.fundoAtivo {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
+    border-radius: calc(var(--raio-sm) - 4px);
+    z-index: 0;
+}
+
+.texto {
+    position: relative;
+    z-index: 1;
+}

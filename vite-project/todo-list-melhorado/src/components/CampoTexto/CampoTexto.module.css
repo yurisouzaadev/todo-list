@@ -1,0 +1,19 @@
+.CampoTexto {
+    border: 1.5px solid var(--borda);
+    border-radius: var(--raio-sm);
+    background: var(--fundo-card);
+    color: var(--texto);
+    width: 100%;
+    padding: 0.6rem 0.9rem;
+    transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+
+.CampoTexto::placeholder {
+    color: var(--texto-suave);
+}
+
+.CampoTexto:focus {
+    outline: none;
+    border-color: var(--verde);
+    box-shadow: 0 0 0 3px rgba(54, 181, 159, 0.18);
+}

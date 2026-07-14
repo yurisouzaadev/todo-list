@@ -1,0 +1,10 @@
+.rodape {
+    background: linear-gradient(135deg, var(--preto), #1a1a1a);
+    padding: 1rem;
+    color: var(--cinza);
+    text-align: center;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

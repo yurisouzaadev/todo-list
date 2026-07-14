@@ -1,0 +1,19 @@
+.AlternadorTema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: inherit;
+}
+
+.AlternadorTema:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.icone {
+    display: flex;
+}

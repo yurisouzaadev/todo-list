@@ -1,0 +1,148 @@
+.ListaTarefasItem {
+    list-style: none;
+}
+
+.ListaTarefasItem[data-arrastando='true'] {
+    z-index: 2;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: var(--fundo-card);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 0.65rem 0.85rem;
+    box-shadow: var(--sombra-sm);
+    transition: border-color var(--transicao), opacity var(--transicao);
+}
+
+.inner[data-concluida='true'] {
+    opacity: 0.65;
+}
+
+.ListaTarefasItem[data-arrastando='true'] .inner {
+    box-shadow: var(--sombra);
+    border-color: var(--verde);
+}
+
+.alcaArraste {
+    border: none;
+    background: transparent;
+    color: var(--texto-suave);
+    cursor: grab;
+    display: flex;
+    touch-action: none;
+}
+
+.alcaArraste:active {
+    cursor: grabbing;
+}
+
+.checkbox {
+    flex-shrink: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: 2px solid var(--borda);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all var(--transicao);
+}
+
+.checkbox[data-concluida='true'] {
+    background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
+    border-color: var(--verde-escuro);
+}
+
+.corpo {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.nome {
+    word-break: break-word;
+    transition: color var(--transicao);
+}
+
+.nome[data-concluida='true'] {
+    text-decoration: line-through;
+    color: var(--texto-suave);
+}
+
+.metadados {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.badgePrioridade {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--cor-prioridade);
+    background: color-mix(in srgb, var(--cor-prioridade) 15%, transparent);
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+}
+
+.badgeData {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    background: var(--fundo-hover);
+    color: var(--texto-suave);
+}
+
+.badgeData[data-prazo='atrasada'] {
+    background: color-mix(in srgb, var(--vermelho) 15%, transparent);
+    color: var(--vermelho);
+}
+
+.badgeData[data-prazo='hoje'] {
+    background: color-mix(in srgb, var(--amarelo) 18%, transparent);
+    color: var(--amarelo);
+}
+
+.acoes {
+    display: flex;
+    gap: 0.25rem;
+    flex-shrink: 0;
+}
+
+.botaoIcone {
+    width: 1.9rem;
+    height: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: var(--texto-suave);
+    border-radius: var(--raio-sm);
+    transition: all var(--transicao);
+}
+
+.botaoIcone:hover {
+    background: var(--fundo-hover);
+    color: var(--texto);
+}
+
+.botaoIcone.perigo:hover {
+    background: color-mix(in srgb, var(--vermelho) 15%, transparent);
+    color: var(--vermelho);
+}
+
+.botaoIcone:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

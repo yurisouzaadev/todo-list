@@ -1,0 +1,35 @@
+.BarraProgresso {
+    width: 100%;
+    background: var(--fundo-card);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 1rem 1.25rem;
+    box-shadow: var(--sombra-sm);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+    margin-bottom: 0.6rem;
+}
+
+.percentual {
+    font-weight: 700;
+    color: var(--verde-escuro);
+}
+
+.trilha {
+    height: 0.55rem;
+    border-radius: 999px;
+    background: var(--fundo-hover);
+    overflow: hidden;
+}
+
+.preenchimento {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--verde), var(--rosa));
+}
